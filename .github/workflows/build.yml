@@ -12,11 +12,11 @@ jobs:
       matrix:
         python: ['2.7', '3.5', '3.6', '3.7', '3.8']
         django: ['1.11.*', '2.2.*']
-      exclude:
-        - python: '2.7'
-          django: '2.2.*'
-        - python: '3.8'
-          django: '1.11.*'
+        exclude:
+          - python: '2.7'
+            django: '2.2.*'
+          - python: '3.8'
+            django: '1.11.*'
 
     steps:
       - name: Clone repository
