@@ -37,6 +37,8 @@ See [Django's cache framework][django-cache]
 Decorator: `cache_anonymous_user(timeout, cache="default")`
 
 ```python
+from django_epflmisc.decorators import cache_anonymous_user
+
 @cache_anonymous_user(60 * 15)
 def my_view(request):
     # I can assume now that the view is cached for anonymous users.
