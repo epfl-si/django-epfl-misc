@@ -26,6 +26,18 @@ pip install django-epfl-misc
 Documentation
 -------------
 
+### Auth
+
+#### `superuser_required_or_403()`
+
+```python
+from django_epflmisc.decorators import superuser_required_or_403
+
+@superuser_required_or_403()
+def my_view(request):
+    # I can assume now that the view is only accessible as a superuser.
+```
+
 ### Cache
 
 The cache system requires a small amount of setup. Namely, you have to tell
@@ -34,7 +46,7 @@ filesystem or directly in memory.
 
 See [Django's cache framework][django-cache]
 
-Decorator: `cache_anonymous_user(timeout, cache="default")`
+#### `cache_anonymous_user(timeout, cache="default")`
 
 ```python
 from django_epflmisc.decorators import cache_anonymous_user
