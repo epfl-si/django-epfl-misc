@@ -4,7 +4,6 @@
 from functools import wraps
 
 from django.core.exceptions import PermissionDenied
-from django.utils.decorators import available_attrs
 from django.views.decorators.cache import cache_page
 
 
@@ -19,7 +18,7 @@ def cache_anonymous_user(timeout, cache="default"):
     """
 
     def decorator(view_func):
-        @wraps(view_func, assigned=available_attrs(view_func))
+        @wraps(view_func)
         def _wrapped_view(request, *args, **kwargs):
             if request.user.is_authenticated:
                 return view_func(request, *args, **kwargs)
@@ -46,7 +45,7 @@ def superuser_required_or_403():
     """
 
     def decorator(view_func):
-        @wraps(view_func, assigned=available_attrs(view_func))
+        @wraps(view_func)
         def _wrapped_view(request, *args, **kwargs):
             if not request.user.is_superuser:
                 raise PermissionDenied
