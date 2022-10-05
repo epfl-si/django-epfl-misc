@@ -11,7 +11,7 @@ A Django application with helper functions and utilities.
 Requirements
 ------------
 
-- Python 3.5 or later
+- Python 3.6 or later
 - Django 2.2 or 3.2
 
 Installation
