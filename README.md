@@ -61,7 +61,7 @@ License
 
 The MIT License (MIT)
 
-Copyright (c) 2021 ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI.
+Copyright (c) 2021-2022 ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland.
 
 [github-actions-image]: https://github.com/epfl-si/django-epfl-misc/workflows/Build/badge.svg?branch=main
 [github-actions-url]: https://github.com/epfl-si/django-epfl-misc/actions
