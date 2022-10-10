@@ -1,6 +1,26 @@
 Changelog
 =========
 
+### v1.0.0 / 2022-10-10
+
+##### Backwards Incompatible Changes
+
+  - Drop Python 2.7 support (#29).
+  - Drop Python 3.5 support (#38).
+  - Drop Django 1.11 support (#29).
+
+##### Features
+
+  - Add Python 3.10 support (#46).
+
+##### Misc
+
+  - Lint via tox (#48).
+  - Update pytest ecosystem (#44).
+  - Update flake8 from 3.9.2 to 5.0.4 (#42).
+  - Update checkout action from v2 to v3 (#34).
+  - Update setup-python action from v2 to v4 (#36).
+
 ### v0.1.0 / 2022-10-04
 
 ##### Features
