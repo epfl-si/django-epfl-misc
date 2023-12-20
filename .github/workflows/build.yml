@@ -10,7 +10,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python: ['3.6', '3.7', '3.8', '3.9', '3.10', '3.11']
+        python: ['3.6', '3.7', '3.8', '3.9', '3.10', '3.11', '3.12']
         django: ['2.2.*', '3.2.*', '4.2.*']
         exclude:
           - python: '3.6'
@@ -22,6 +22,10 @@ jobs:
           - python: '3.11'
             django: '2.2.*'
           - python: '3.11'
+            django: '3.2.*'
+          - python: '3.12'
+            django: '2.2.*'
+          - python: '3.12'
             django: '3.2.*'
 
     steps:
