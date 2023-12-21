@@ -1,6 +1,22 @@
 Changelog
 =========
 
+### v1.1.0 / 2023-12-21
+
+##### Features
+
+  - Add Python 3.11 support (#52).
+  - Add Python 3.12 support (#57).
+  - Add Django 4.2 support (#54).
+
+##### Fixes
+
+  - Fix GitHub Actions badge (#56).
+
+##### Misc
+
+  - Update codecov-action to v3 (#59).
+
 ### v1.0.0 / 2022-10-10
 
 ##### Backwards Incompatible Changes
