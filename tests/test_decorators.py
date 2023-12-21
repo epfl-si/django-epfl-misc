@@ -13,6 +13,7 @@ from django_epflmisc.decorators import (
 
 
 class CacheDecoratorTest(TestCase):
+
     factory = RequestFactory()
 
     def test_cache_anonymous_user(self):
@@ -43,6 +44,7 @@ class CacheDecoratorTest(TestCase):
 
 
 class AuthDecoratorTest(TestCase):
+
     factory = RequestFactory()
 
     def test_superuser(self):
