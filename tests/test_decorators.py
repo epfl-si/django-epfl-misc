@@ -1,4 +1,4 @@
-# (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, 2021-2022.
+# (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, 2021-2023.
 # See the LICENSE file for more details.
 
 from django.contrib.auth.models import AnonymousUser, User
@@ -13,7 +13,6 @@ from django_epflmisc.decorators import (
 
 
 class CacheDecoratorTest(TestCase):
-
     factory = RequestFactory()
 
     def test_cache_anonymous_user(self):
@@ -44,7 +43,6 @@ class CacheDecoratorTest(TestCase):
 
 
 class AuthDecoratorTest(TestCase):
-
     factory = RequestFactory()
 
     def test_superuser(self):
