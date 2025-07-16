@@ -4,17 +4,15 @@ on: [push, pull_request]
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     name: Python ${{ matrix.python }} / Django ${{ matrix.django }} CI
 
     strategy:
       fail-fast: false
       matrix:
-        python: ['3.6', '3.7', '3.8', '3.9', '3.10', '3.11', '3.12']
+        python: ['3.7', '3.8', '3.9', '3.10', '3.11', '3.12']
         django: ['2.2.*', '3.2.*', '4.2.*']
         exclude:
-          - python: '3.6'
-            django: '4.2.*'
           - python: '3.7'
             django: '4.2.*'
           - python: '3.10'
