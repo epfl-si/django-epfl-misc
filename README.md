@@ -1,5 +1,4 @@
-django-epfl-misc
-================
+# django-epfl-misc
 
 [![Build Status][github-actions-image]][github-actions-url]
 [![Coverage Status][codecov-image]][codecov-url]
@@ -8,14 +7,12 @@ django-epfl-misc
 
 A Django application with helper functions and utilities.
 
-Requirements
-------------
+## Requirements
 
 - Python 3.7 or later
 - Django 2.2, 3.2, 4.2 or 5.2
 
-Installation
-------------
+## Installation
 
 Installing from PyPI is as easy as doing:
 
@@ -23,8 +20,7 @@ Installing from PyPI is as easy as doing:
 pip install django-epfl-misc
 ```
 
-Documentation
--------------
+## Documentation
 
 ### Auth
 
@@ -56,8 +52,7 @@ def my_view(request):
     # I can assume now that the view is cached for anonymous users.
 ```
 
-License
--------
+## License
 
 The MIT License (MIT)
 

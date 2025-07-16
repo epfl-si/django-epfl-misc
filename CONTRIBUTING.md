@@ -1,8 +1,6 @@
-Contributing
-============
+# Contributing
 
-Setup
------
+## Setup
 
 Get the project with:
 
@@ -11,22 +9,20 @@ git clone git@github.com:epfl-si/django-epfl-misc.git
 cd django-epfl-misc
 ```
 
-Then, create a virtual environment (Python version and some libraries) with 
+Then, create a virtual environment (Python version and some libraries) with
 your favourite tool and:
 
 ```bash
 pip install tox
 ```
 
-Test
-----
+## Test
 
 ```bash
 tox
 ```
 
-Release
--------
+## Release
 
 1. Bump the correct version
 1. Update the file [CHANGELOG.md](CHANGELOG.md)
