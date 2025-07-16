@@ -12,7 +12,7 @@ Requirements
 ------------
 
 - Python 3.7 or later
-- Django 2.2, 3.2 or 4.2
+- Django 2.2, 3.2, 4.2 or 5.2
 
 Installation
 ------------
