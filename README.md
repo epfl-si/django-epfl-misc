@@ -56,7 +56,7 @@ def my_view(request):
 
 The MIT License (MIT)
 
-Copyright (c) 2021-2023 ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland.
+Copyright (c) 2021-2025 ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland.
 
 [github-actions-image]: https://github.com/epfl-si/django-epfl-misc/actions/workflows/build.yml/badge.svg?branch=main
 [github-actions-url]: https://github.com/epfl-si/django-epfl-misc/actions
