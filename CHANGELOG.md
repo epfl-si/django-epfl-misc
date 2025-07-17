@@ -1,6 +1,26 @@
 Changelog
 =========
 
+### v2.0.0 / 2025-07-17
+
+##### Backwards Incompatible Changes
+
+  - Drop Python 3.6 support (#68).
+
+##### Features
+
+  - Add Python 3.13 support (#70).
+  - Add Django 5.2 support (#69).
+
+##### Misc
+
+  - Add VS Code settings (#64).
+  - Add VS Code recommended extensions (#63).
+  - Update actions/setup-python to v5 (#67).
+  - Update actions/checkout to v4 (#65).
+  - Update codecov/codecov-action to v4 (#66).
+  - Fix Markdown heading style (#71).
+
 ### v1.1.0 / 2023-12-21
 
 ##### Features
