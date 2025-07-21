@@ -5,7 +5,7 @@ on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-22.04
-    name: Python ${{ matrix.python }} / Django ${{ matrix.django }} CI
+    name: Python ${{ matrix.python }} CI
 
     strategy:
       fail-fast: false
