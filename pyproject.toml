@@ -1,6 +1,63 @@
 # (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, 2021-2025.
 # See the LICENSE file for more details.
 
+[build-system]
+requires = ["pdm-backend >= 2.0.0"]
+build-backend = "pdm.backend"
+
+[project]
+name = "django-epfl-misc"
+dynamic = ["version"]
+requires-python = ">= 3.7"
+description = "A Django application with helper functions and utilities."
+readme = "README.md"
+authors = [
+  {name = "William Belle", email = "william.belle@gmail.com"},
+]
+license= {text = "MIT"}
+classifiers = [
+  "Environment :: Web Environment",
+  "Framework :: Django",
+  "Framework :: Django :: 2.2",
+  "Framework :: Django :: 3.2",
+  "Framework :: Django :: 4.2",
+  "Framework :: Django :: 5.2",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://github.com/epfl-si/django-epfl-misc"
+Source = "https://github.com/epfl-si/django-epfl-misc"
+Tracker = "https://github.com/epfl-si/django-epfl-misc/issues"
+Changelog = "https://github.com/epfl-si/django-epfl-misc/blob/main/CHANGELOG.md"
+
+[tool.pdm.version]
+source = "file"
+path = "django_epflmisc/__init__.py"
+
 [tool.black]
 line-length = 80
 include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+line_length = 80
+multi_line_output = 3
+include_trailing_comma = "True"
+
+[tool.pytest.ini_options]
+addopts = "--cov=django_epflmisc --cov-report=term --cov-report=xml --cov-fail-under=90"
+pythonpath = "tests/"
+DJANGO_SETTINGS_MODULE = "settings"
