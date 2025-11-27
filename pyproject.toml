@@ -46,6 +46,9 @@ Changelog = "https://github.com/epfl-si/django-epfl-misc/blob/main/CHANGELOG.md"
 source = "file"
 path = "django_epflmisc/__init__.py"
 
+[tool.pdm.build]
+source-includes = ["CHANGELOG.md", "LICENSE", "README.md"]
+
 [tool.black]
 line-length = 80
 include = '\.pyi?$'
