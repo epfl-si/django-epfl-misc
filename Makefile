@@ -1,3 +1,6 @@
+PYTHON_VERSION=3.13.0
+PYTHON_VENV=django-epfl-misc
+
 .PHONY: help
 help: ## Display this help message.
 	@echo "Please use make <target> where <target> is one of"
@@ -10,6 +13,12 @@ clean: ## Remove coverage reports and build artifacts.
 	@rm -fr .pdm-build/
 	@rm -fr dist/
 
+.PHONY: cleanall
+cleanall: clean ## Remove coverage reports, build artifacts, venv and tox envs.
+	@rm -fr .tox/
+	@pyenv virtualenv-delete --force ${PYTHON_VENV}
+	@rm -f .python-version
+
 .PHONY: lint
 lint: ## Check coding style.
 	tox -e lint
@@ -17,3 +26,22 @@ lint: ## Check coding style.
 .PHONY: test
 test: ## Run tests on every supported Python/Django combination.
 	tox
+
+.PHONY: installdeps
+installdeps: ## Install all necessary dependencies in the virtualenv.
+	@eval "$$(pyenv init -)" && pyenv activate ${PYTHON_VENV} && \
+	pip install -r requirements/requirements-tools.txt && \
+	pip install -r requirements/requirements-lint.txt && \
+	pip install -r requirements/requirements-dev.txt && \
+	pip install .
+
+.PHONY: venv
+venv: ## Create a virtualenv django-epfl-entra-id with pyenv.
+	@if [ ! -d "${HOME}/.pyenv/versions/${PYTHON_VERSION}" ]; then \
+		pyenv install ${PYTHON_VERSION}; \
+	fi
+	@pyenv virtualenv ${PYTHON_VERSION} ${PYTHON_VENV}
+
+.PHONY: setup
+setup: venv installdeps ## Setup a virtualenv and install dependencies.
+	@echo ${PYTHON_VENV} > .python-version
