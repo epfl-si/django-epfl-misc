@@ -60,6 +60,6 @@ multi_line_output = 3
 include_trailing_comma = "True"
 
 [tool.pytest.ini_options]
-addopts = "--cov=django_epflmisc --cov-report=term --cov-report=xml --cov-fail-under=90"
+addopts = "--cov=django_epflmisc --cov-report=term --cov-report=xml --cov-report=html --cov-fail-under=90"
 pythonpath = "tests/"
 DJANGO_SETTINGS_MODULE = "settings"
