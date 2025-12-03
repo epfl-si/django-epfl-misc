@@ -1,102 +1,121 @@
-Changelog
-=========
+# Changelog
 
-### v2.0.1 / 2025-07-21
+## v2.1.0 / 2025-12-03
 
-##### Misc
+### Fixes
 
-  - Modernize packaging (#78).
-  - Simplify tox tests (#77).
-  - Remove license classifier (#76).
+- Fix files included with pdm build (#83).
 
-### v2.0.0 / 2025-07-17
+### Misc
 
-##### Backwards Incompatible Changes
+- Add html report (#90).
+- Launch pytest from VS Code (#91).
+- Init Makefile (#84).
+- Add targets setup, venv, installdeps and cleanall (#88).
+- Add targets clean, lint and test (#87).
+- Improve CONTRIBUTING (#89).
+- Run linter only on latest Python (#86).
+- Refactor requirements (#85).
+- Update codecov/codecov-action to v5 (#82).
+- Update actions/setup-python to v6 (#81).
+- Update actions/checkout to v5 (#80).
 
-  - Drop Python 3.6 support (#68).
+## v2.0.1 / 2025-07-21
 
-##### Features
+### Misc
 
-  - Add Python 3.13 support (#70).
-  - Add Django 5.2 support (#69).
+- Modernize packaging (#78).
+- Simplify tox tests (#77).
+- Remove license classifier (#76).
 
-##### Misc
+## v2.0.0 / 2025-07-17
 
-  - Add VS Code settings (#64).
-  - Add VS Code recommended extensions (#63).
-  - Update actions/setup-python to v5 (#67).
-  - Update actions/checkout to v4 (#65).
-  - Update codecov/codecov-action to v4 (#66).
-  - Fix Markdown heading style (#71).
+### Backwards Incompatible Changes
 
-### v1.1.0 / 2023-12-21
+- Drop Python 3.6 support (#68).
 
-##### Features
+### Features
 
-  - Add Python 3.11 support (#52).
-  - Add Python 3.12 support (#57).
-  - Add Django 4.2 support (#54).
+- Add Python 3.13 support (#70).
+- Add Django 5.2 support (#69).
 
-##### Fixes
+### Misc
 
-  - Fix GitHub Actions badge (#56).
+- Add VS Code settings (#64).
+- Add VS Code recommended extensions (#63).
+- Update actions/setup-python to v5 (#67).
+- Update actions/checkout to v4 (#65).
+- Update codecov/codecov-action to v4 (#66).
+- Fix Markdown heading style (#71).
 
-##### Misc
+## v1.1.0 / 2023-12-21
 
-  - Update codecov-action to v3 (#59).
+### Features
 
-### v1.0.0 / 2022-10-10
+- Add Python 3.11 support (#52).
+- Add Python 3.12 support (#57).
+- Add Django 4.2 support (#54).
 
-##### Backwards Incompatible Changes
+### Fixes
 
-  - Drop Python 2.7 support (#29).
-  - Drop Python 3.5 support (#38).
-  - Drop Django 1.11 support (#29).
+- Fix GitHub Actions badge (#56).
 
-##### Features
+### Misc
 
-  - Add Python 3.10 support (#46).
+- Update codecov-action to v3 (#59).
 
-##### Misc
+## v1.0.0 / 2022-10-10
 
-  - Lint via tox (#48).
-  - Update pytest ecosystem (#44).
-  - Update flake8 from 3.9.2 to 5.0.4 (#42).
-  - Update checkout action from v2 to v3 (#34).
-  - Update setup-python action from v2 to v4 (#36).
+### Backwards Incompatible Changes
 
-### v0.1.0 / 2022-10-04
+- Drop Python 2.7 support (#29).
+- Drop Python 3.5 support (#38).
+- Drop Django 1.11 support (#29).
 
-##### Features
+### Features
 
-  - Add Django 3.2 support (#27).
+- Add Python 3.10 support (#46).
 
-##### Fixes
+### Misc
 
-  - Fix release workflow (#12).
+- Lint via tox (#48).
+- Update pytest ecosystem (#44).
+- Update flake8 from 3.9.2 to 5.0.4 (#42).
+- Update checkout action from v2 to v3 (#34).
+- Update setup-python action from v2 to v4 (#36).
 
-##### Misc
+## v0.1.0 / 2022-10-04
 
-  - Update flake8 from 3.8.4 to 3.9.2 (#13, #15, #21).
-  - Update isort from 5.7.0 to 5.8.0 (#17).
-  - Update pytest-cov from 2.11.1 to 2.12.0 (#23).
-  - Update black from 20.8b1 to 22.8.0 (#19, #27).
-  - Update codecov-action from v1 to v2 (#25).
-  - Pin importlib-metadata to 2.1.3 (#31).
+### Features
 
-### v0.0.2 / 2021-02-22
+- Add Django 3.2 support (#27).
 
-##### Features
+### Fixes
 
-  - Add decorator `superuser_required_or_403()` (#9).
-  - Add Python 3.9 support (#7).
+- Fix release workflow (#12).
+
+### Misc
+
+- Update flake8 from 3.8.4 to 3.9.2 (#13, #15, #21).
+- Update isort from 5.7.0 to 5.8.0 (#17).
+- Update pytest-cov from 2.11.1 to 2.12.0 (#23).
+- Update black from 20.8b1 to 22.8.0 (#19, #27).
+- Update codecov-action from v1 to v2 (#25).
+- Pin importlib-metadata to 2.1.3 (#31).
+
+## v0.0.2 / 2021-02-22
+
+### Features
+
+- Add decorator `superuser_required_or_403()` (#9).
+- Add Python 3.9 support (#7).
   
-##### Misc
+### Misc
 
-  - Add release workflow to PyPI with GitHub Actions.
-  - Add project urls in `setup.py` metadata (#10).
-  - Tweak black and isort config (#5, #6, #8).
+- Add release workflow to PyPI with GitHub Actions.
+- Add project urls in `setup.py` metadata (#10).
+- Tweak black and isort config (#5, #6, #8).
 
-### v0.0.1 / 2021-02-08
+## v0.0.1 / 2021-02-08
 
-  - First version, released on an unsuspecting world.
+- First version, released on an unsuspecting world.
