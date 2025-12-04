@@ -1,4 +1,4 @@
-PYTHON_VERSION=3.13.0
+PYTHON_VERSION=3.14.0
 PYTHON_VENV=django-epfl-misc
 
 .PHONY: help
