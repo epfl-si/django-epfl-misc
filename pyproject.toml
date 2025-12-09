@@ -9,6 +9,9 @@ build-backend = "pdm.backend"
 name = "django-epfl-misc"
 dynamic = ["version"]
 requires-python = ">= 3.7"
+dependencies = [
+  "django >= 2.2",
+]
 description = "A Django application with helper functions and utilities."
 readme = "README.md"
 authors = [
