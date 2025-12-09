@@ -1,5 +1,21 @@
 # Changelog
 
+## v2.1.0 / 2025-12-09
+
+### Features
+
+- Add Python 3.14 support (#95).
+
+### Fixes
+
+- Add Django as dependency (#97).
+
+### Misc
+
+- Update isort to 7.0.0 (#96).
+- Update flake8 to 7.3.0 (#94).
+- Update black to 25.11.0 (#93).
+
 ## v2.1.0 / 2025-12-03
 
 ### Fixes
